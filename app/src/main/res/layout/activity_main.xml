@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#FFFFFFFF">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_vertical"
+			android:layout_marginTop="8dp">
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="match_parent"
+				android:id="@+id/activitymainEditText1"
+				android:textColor="#FF000000"
+				android:textSize="14sp"
+				android:typeface="monospace"
+				android:hint="Enter Project DIR."
+				android:layout_weight="1.0"
+				android:gravity="center_vertical"
+				android:singleLine="true"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Build"
+				android:id="@+id/activitymainButton1"
+				android:layout_marginLeft="8dp"/>
+
+		</LinearLayout>
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#212121"
+			android:fillViewport="true">
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="No errors found."
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textIsSelectable="true"
+					android:textColor="#EEEEEE"
+					android:padding="8dp"
+					android:id="@+id/activitymainTextView1"/>
+
+			</HorizontalScrollView>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|right"
+		android:layout_margin="16dp"
+		android:src="@drawable/add"
+		app:layout_anchorGravity="bottom|right|end"
+		app:backgroundTint="#FFF44336"
+		app:tint="#FFFFFFFF"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
